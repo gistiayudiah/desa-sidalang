@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Berita</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            background:#f5f5f5;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .breaking-news{
+            background:#fff;
+            border:1px solid #ddd;
+            margin:25px 0;
+            display:flex;
+            align-items:center;
+        }
+
+        .breaking-news span{
+            background:#dc3545;
+            color:#fff;
+            font-weight:bold;
+            padding:10px 15px;
+        }
+
+        .headline{
+            position:relative;
+            overflow:hidden;
+        }
+
+        .headline img{
+            width:100%;
+            height:420px;
+            object-fit:cover;
+        }
+
+        .headline-overlay{
+            position:absolute;
+            bottom:0;
+            left:0;
+            width:100%;
+            background:linear-gradient(transparent,rgba(0,0,0,.9));
+            color:white;
+            padding:20px;
+        }
+
+        .headline-overlay h3{
+            font-size:28px;
+        }
+
+        .sidebar-title{
+            font-weight:bold;
+            border-bottom:3px solid #dc3545;
+            padding-bottom:10px;
+            margin-bottom:15px;
+        }
+
+        .side-news{
+            display:flex;
+            margin-bottom:20px;
+        }
+
+        .side-news img{
+            width:120px;
+            height:80px;
+            object-fit:cover;
+            margin-right:10px;
+        }
+
+        .news-menu{
+            background:#fff;
+            padding:10px;
+            margin-top:25px;
+            margin-bottom:20px;
+        }
+
+        .news-menu a{
+            text-decoration:none;
+            color:#000;
+            font-weight:bold;
+            margin-right:20px;
+        }
+
+        .big-news{
+            display:flex;
+            background:#fff;
+            padding:15px;
+            margin-bottom:20px;
+        }
+
+        .big-news img{
+            width:300px;
+            height:180px;
+            object-fit:cover;
+            margin-right:20px;
+        }
+
+        .small-news{
+            display:flex;
+            margin-bottom:15px;
+            background:#fff;
+            padding:10px;
+        }
+
+        .small-news img{
+            width:110px;
+            height:80px;
+            object-fit:cover;
+            margin-right:10px;
+        }
+
+        .badge-news{
+            background:#dc3545;
+            color:white;
+            padding:3px 8px;
+            font-size:12px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Breaking News -->
+
+    <div class="breaking-news">
+
+        <span>BREAKING NEWS</span>
+
+        <marquee>
+            Lagi-lagi Begis Pincut, Ketua ADKASI Angkat Bicara
+        </marquee>
+
+    </div>
+
+
+    <!-- Berita Utama -->
+
+    <div class="row">
+
+        <div class="col-lg-8">
+
+            <div class="headline">
+
+                <img src="https://picsum.photos/900/500" alt="">
+
+                <div class="headline-overlay">
+
+                    <small class="bg-dark p-1">
+                        UNCATEGORIZED
+                    </small>
+
+                    <h3 class="mt-3">
+                        Pemerintah dan Tokoh Masyarakat Antusias Sambut Pelatihan Home Stay di Kelurahan Nageoga
+                    </h3>
+
+                    <p>Fred Siga • Oktober 16, 2020</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+            <div class="bg-white p-3">
+
+                <h5 class="sidebar-title">
+                    BERITA YANG DISARANKAN
+                </h5>
+
+                <div class="side-news">
+
+                    <img src="https://picsum.photos/150/100?1">
+
+                    <div>
+
+                        <b>Dokter telah menemukan penyebab bau mulut</b>
+
+                    </div>
+
+                </div>
+
+                <div class="side-news">
+
+                    <img src="https://picsum.photos/150/100?2">
+
+                    <div>
+
+                        <b>1 Trik baru yang membuat semua dokter menyembunyikannya</b>
+
+                    </div>
+
+                </div>
+
+                <div class="side-news">
+
+                    <img src="https://picsum.photos/150/100?3">
+
+                    <div>
+
+                        <b>Infeksi jamur pada kuku akan hilang dalam 2 hari</b>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Menu -->
+
+    <div class="news-menu">
+
+        <a href="#">ALL NEWS</a>
+        <a href="#">World</a>
+        <a href="#">Advertorial</a>
+        <a href="#">Aneka</a>
+        <a href="#">Daerah</a>
+
+    </div>
+
+
+    <!-- Isi Berita -->
+
+    <div class="row">
+
+        <div class="col-lg-8">
+
+            <div class="big-news">
+
+                <img src="https://picsum.photos/400/250">
+
+                <div>
+
+                    <span class="badge-news">
+                        Daerah
+                    </span>
+
+                    <h4 class="mt-3">
+                        ASN Lingkup Setda Nagekeo Diharapkan Menghindari Korupsi
+                    </h4>
+
+                    <small>
+                        Fred Siga • Juli 12, 2019
+                    </small>
+
+                    <p class="mt-2">
+
+                        ASN Lingkup Setda Nagekeo diharapkan dapat
+                        menghindari korupsi karena korupsi akan
+                        berdampak terhadap keluarga maupun masyarakat.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+            <div class="small-news">
+
+                <img src="https://picsum.photos/120/80?4">
+
+                <div>
+
+                    <b>H-2 Lebaran, Pergerakan Penumpang di Bandara...</b>
+
+                    <br>
+
+                    <small>Juli 4, 2019</small>
+
+                </div>
+
+            </div>
+
+            <div class="small-news">
+
+                <img src="https://picsum.photos/120/80?5">
+
+                <div>
+
+                    <b>Wabup Kupang Buka Kejuaraan Renang...</b>
+
+                    <br>
+
+                    <small>Oktober 25, 2019</small>
+
+                </div>
+
+            </div>
+
+            <div class="small-news">
+
+                <img src="https://picsum.photos/120/80?6">
+
+                <div>
+
+                    <b>Wakil Bupati Nagekeo Launching Rumah JPS</b>
+
+                    <br>
+
+                    <small>Oktober 12, 2020</small>
+
+                </div>
+
+            </div>
+
+            <div class="small-news">
+
+                <img src="https://picsum.photos/120/80?7">
+
+                <div>
+
+                    <b>Bupati Nagekeo Lantik Adik Kandung Jadi Sekretaris</b>
+
+                    <br>
+
+                    <small>Juli 22, 2019</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
